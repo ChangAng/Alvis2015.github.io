@@ -1,0 +1,56 @@
+.section{
+    padding: 5px 0;
+}
+
+.space {
+    height: 70px;
+}
+
+
+#selfIntroduction {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,fefefe+100 */
+    background-image: url("http://www.psdgraphics.com/file/abstract-mosaic-background.png"); /* Old browsers */
+    background-position: center;
+    background-repeat:repeat;
+    min-height: 100vh;
+    
+}
+
+#photoSlide {
+    min-height: 100vh;
+    background-color: black;
+}
+
+#timelinejs {
+    min-height: 100vh;
+    background-color: gray;
+}
+
+#contactMe {
+    min-height: 100vh;
+    background-color: #FFF8DC;
+    background-image:url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/background-wallpapers-32.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#gotopbutton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index:20;
+    cursor: pointer;
+}
+#mbutton {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index:20;
+    cursor: pointer;
+}
+#musicbtn{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index:20;
+    cursor: pointer;
+}
