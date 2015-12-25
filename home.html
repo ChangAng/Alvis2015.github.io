@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Alvis Zi's Personal Website!</title>
   
 
   <link rel="stylesheet" href="css/main.css">
@@ -80,19 +80,19 @@
 <div class="ui top sidebar  massive inverted borderless four item labeled icon compact menu">
   <a id="mit1" class="item">
     <i class="large home teal icon"></i>
-    Home
+    首頁
   </a>
   <a id="mit2" class="item">
     <i class="large male yellow icon"></i>
-    Self Introduction
+    簡介
   </a>
   <a id="mit3" class="item">
     <i class="large wait brown icon"></i>
-    TimeLine
+    時間線
       </a>
   <a id="mit5" class="item">
     <i class="large red mail icon"></i>
-    Contact Me
+    聯絡我!
        </a>
     </div>
 
@@ -100,8 +100,8 @@
    <i id='mbutton' class="huge green align justify icon "></i>
    <i id='gotopbutton' class=" huge green arrow circle up icon"></i>
   <!-- 這裡放 照片slide -->
-  <div id="photoSlide" class="section aniview fast" av-animation="zoomIn">
-    <div id="ninja-slider">
+  <div id="photoSlide" class="section">
+    <div id="ninja-slider" class="aniview reallyslow" av-animation="rotateInUpLeft">
        <div class="slider-inner">
             <ul id="inphoto">
           <!--  <li>
@@ -139,38 +139,38 @@
   <div  id="selfIntroduction" class="section">
     <div class="space"></div>
 
-    <div class="ui stackable three column grid container">
+    <div class="ui stackable three column grid container aniview slow" av-animation="flipInX" >
       <!-- my photo card -->
-      <div id='myphoto' class="column aniview fast" av-animation="zoomIn" >
+      <div id='myphoto' class="column">
         <div class="ui centered card">
           <div class="ui slide masked reveal image">
             <img src="photo.png" class="visible content">
             <img src="http://s1.img.766.com/251/111013/1111/195427.jpg" class="hidden content">
           </div>
           <div class="content">
-            <a class="header">Alvis</a>
+            <a class="header">Alvis Zi</a>
             <div class="meta">
-              <span class="date">A Video-Game Lover!</span>
+              <span class="date">Yee個熱愛電玩的人</span>
             </div>
           </div>
           <div class="extra content">
             <button id="showmybtn" class="ui grey basic button">
-              Show my detail
+              看看我的個人詳情
             </button>
               <!-- show modal -->
             <div class="ui modal">
               <i class="close icon"></i>
               <div class="header">
-                My Picture
+                Alvis Zi
               </div>
               <div class="image content">
                 <div class="ui medium image">
                   <img src="head.png">
                 </div>
                 <div class="description">
-                  <div class="ui header">Hi! I'm Alvis</div>
-                  <p>Here is my personal website!</p>
-                  <p>You can get some infomation about me at here.</p>
+                  <div class="ui header">哈囉! 我是紀子敬 (Alvis Zi)</div>
+                  <p>在你面前的是我的個人網站!</p>
+                  <p>你可以透過以下連結，找到關於我的資料!</p>
                 </div>
               </div>
               <div class="actions">
@@ -187,7 +187,7 @@
                   </button>
                 </a>
                 <div class="ui positive right labeled icon button">
-                  Yep, that's me
+                  確認
                   <i class="thumbs outline up icon"></i>
                 </div>
               </div>
@@ -197,7 +197,7 @@
       </div>
       <!-- show myskill-->
       <div id='myskill' class="column">
-        <i class="big configure icon">Games</i>
+        <i class="big configure icon">Experience_of_Game</i>
         <div style="height:5px;"></div>
         <div id="p_java" class="ui yellow active progress">
           <div class="bar" style="width:80%">
@@ -209,25 +209,25 @@
           <div class="bar" style="width:80%">
             <div class="progress">80%</div>
           </div>
-          <div class="label">Counter-Strike: Global Offensive</div>
+          <div class="label">Hearthstone</div>
         </div>
         <div id="p_javascript" class="ui olive active progress">
           <div class="bar" style="width:70%">
             <div class="progress">70%</div>
           </div>
-          <div class="label">Minecraft</div>
+          <div class="label">Counter-Strike: Global Offensive</div>
         </div>
         <div id="p_html" class="ui olive active progress">
           <div class="bar" style="width:70%">
             <div class="progress">70%</div>
           </div>
-          <div class="label">Alliance of Valiant Arms</div>
+          <div class="label">Minecraft</div>
         </div>
         <div id="p_jsp" class="ui olive active progress">
           <div class="bar" style="width:70%">
             <div class="progress">70%</div>
           </div>
-          <div class="label">StarCraft II</div>
+          <div class="label">Alliance of Valiant Arms</div>
         </div>
       </div>
       <!-- show software-->
@@ -256,28 +256,30 @@
     </div>
   </div>
     <!-- 這裡放 timelinejs -->
-  <div id="timelinejs" class="section">
-<iframe src='http://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1ugZ6E0B4nk6k4DiEC2ixRYHdIbK4G_1ZcxVYdA1aBLM&font=Default&lang=zh-cn&initial_zoom=2&height=927' width='100%' height='927' frameborder='0'></iframe>
+  <div id="timelinejs">
+   <div class="section aniview fast" av-animation="lightSpeedIn">
+    <iframe src='http://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1ugZ6E0B4nk6k4DiEC2ixRYHdIbK4G_1ZcxVYdA1aBLM&font=Default&lang=zh-cn&initial_zoom=2&height=927' width='100%' height='927' frameborder='0'></iframe>
+   </div>
   </div>
 
   <!-- 這裡放 聯絡我 -->
   <div id="contactMe" class="section">
     <div class="space"></div>
-    <div style="margin-top: 111px;"class="ui one column centered grid container">
+    <div style="margin-top: 111px;"class="ui one column centered grid container aniview fast" av-animation="slideInUp">
       <form class="ui huge form segment">
         <div class="field">
           <label>Your name</label>
-          <input name="yourname" type="text">
+          <input name="yourname" type="text" placeholder="請輸入你的名字">
         </div>
         <div class="field">
           <label>Your email</label>
-          <input name="youremail" type="text">
+          <input name="youremail" type="text" placeholder="請輸入你的電子信箱">
         </div>
         <div class="field">
           <label>You want to tell me what</label>
-          <textarea name="tellmewhat" type="text"></textarea>
+          <textarea name="tellmewhat" type="text" placeholder="告訴我，你想說的話~"></textarea>
         </div>
-        <div id="contactBtn" class="ui olive submit button">Submit</div>
+        <div id="contactBtn" class="ui olive submit button">送出</div>
         <div class="ui error message"></div>
       </form>
     </div>
@@ -289,6 +291,7 @@
         <div class="ui stackable inverted divided grid">
           <div class="three wide column">
             <h4 class="ui inverted header">QR code</h4>
+            <img id="QR" src="static_qr_code_without_logo.jpg" >
             <div class="ui inverted link list">
               
             </div>
@@ -296,21 +299,22 @@
           <div class="three wide column">
             <h4 class="ui inverted header">My Country</h4>
             <div class="ui inverted link list">
-              <i class="massive tw flag"></i>
+              <img id="TW" src="http://www.chinayouth.org.hk/image/ROC_FLAG.jpg">
               <p>Taiwan</p>
             </div>
           </div>
           <div class="three wide column">
             <h4 class="ui inverted header">Occupation</h4>
             <div class="ui inverted link list">
-              <p>University Student</p>
-              <a class="item" href="http://www.nchu.edu.tw/index1.php" target="_blnak">My school</a>
-              <a class="item" href="http://nchuit.cc/" target="_blnak">My group</a>
+              <p>大一菜鳥</p>
+              <a class="item" href="http://www.nchu.edu.tw/index1.php" target="_blnak">我的學校</a>
+              <a class="item" href="http://nchuit.cc/" target="_blnak">我的社團</a>
             </div>
           </div>
           <div class="seven wide column">
             <h4 class="ui inverted header">Thanks for your watching</h4>
-            <p>If you have any question,you can use contact me segment send message to me.In addition,you can be my friend through Facebook.</p>
+            <p>如果你有任何問題，都可以透過在上方的"聯絡我"告訴我!</p>
+            <p>If you have any question, you can use "contact me segment" send message.</p>
           </div>
         </div>
         <div class="ui inverted divider"></div>
