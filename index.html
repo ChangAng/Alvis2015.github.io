@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Alvis Zi's Personal Website!</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/second.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,9 +17,30 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
   <script type="text/javascript" src="js/jquery-aniview-master/jquery.aniview.js"></script>
   <script type="text/javascript" src="js/jquery-aniview-master/jquery.aniview.min.js"></script>
+  <script type="text/javascript" src="js/second.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.aniview').AniView();
+      });
+  </script>
 </head>
 <body>
-	<div>
-		<h5>歡迎來到我的個人網站</h5>
+	<div id="back">
 	</div>
+	<div id="container" class="aniview fast" av-animation="rotateInDownLeft">
+
+			<p>歡迎來到 Alvis 個人網頁!
+			<br/>
+			請	點	擊	下	方	箭	頭!
+			<br/>
+ 			<div class="actions">
+                <a href="home.html">
+                  <button id="btn">
+                    <i class=" huge arrow right icon"></i>
+                  </button>
+                </a>
+			</p>
+
+	</div>
+			
 </body>
