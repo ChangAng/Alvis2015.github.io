@@ -6,25 +6,27 @@
   
 
   <link rel="stylesheet" href="css/main.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/ninja/ninja-slider.css">
 
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <!-- 引入Ｊquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <!-- 引入Ｊs -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
   <!-- 引入CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
-  <link rel="stylesheet" type="text/css" href="css/ninja-slider.css">
-  <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <script type="text/javascript" src="js/control.js"></script>
-  <script src="js/jquery.aniview.min.js"></script>
+  <script src="js/control.js"></script>
+
   <script language=JavaScript>
         var url = location.search;
         var rid;
         if(url.indexOf("?") == -1) {//電腦版網址後方沒有參數，就自動進入手機版判斷程式
 
-                          if(navigator.userAgent.match(/Android|iPhone|iPad/i)) {
-              window.location = 'cellphone.html';
+                          if(navigator.userAgent.match(/windows|Macintosh/i)) {
+              window.location = 'index.html';
              }
 
          }
@@ -35,20 +37,20 @@
             rid = str.split("=")[1];
 
             if (rid != "web" ){  //且第一個參數不是web，就自動進入手機般判斷程式
-      if(navigator.userAgent.match(/Android|iPhone|iPad/i)) {
-              window.location = 'cellphone.html';
+      if(navigator.userAgent.match(/windows|Macintosh/i)) {
+              window.location = 'index.html';
              }
 
           }
       }
 
 </script>
+    
   <script>
     $(document).ready(function() {
-      $('.aniview').AniView();
-      var source_id = '1dAxiWa4kq-OAv11ueAxSJrV8QKgceRF8CcpC1QIU74Y';
+      var source_id = '1ovAu6m7ARmQm7gltrc8Ov1IM-zYi1eIApxP7eo7XeLM';
       $.ajax({
-          url: 'https://spreadsheets.google.com/feeds/list/1dAxiWa4kq-OAv11ueAxSJrV8QKgceRF8CcpC1QIU74Y/1/public/values?alt=json',
+          url: 'https://spreadsheets.google.com/feeds/list/' + source_id + '/2/public/values?alt=json',
           async: false,
           type: 'GET',
         })
@@ -92,16 +94,13 @@
         });
       });     
     });
-    </script>
+  </script>
+  <script src="js/ninja/ninja-slider.js"></script>
 
-  <script type="text/javascript" src="js/ninja-slider.js"></script>
-
-    
 </head>
-  
 <body>
-
-<div class="ui fixed bottom demo inverted sidebar four item labeled icon menu">
+  <!-- 這裡放 menu bar (nav bar) -->
+  <div class="ui fixed bottom demo inverted sidebar four item labeled icon menu">
   <a id="mit1" class="item">
     <i id="041" class="large home teal icon"></i>
     回到首頁
@@ -130,50 +129,12 @@
         Android版下載
         </a>
 </div>
-
   <!-- 這裡放 照片slide -->
-  <div class="space" style="margin: 0px"></div>
-  <div id="photoSlide" class="section aniview slow" av-animation="tada">
-    <div id="ninja-slider">
-       <div class="slider-inner">
-            <ul id="inphoto">
-          <!--  <li>
-                    <a class="ns-img" href="img/1.jpg"></a>
-                    <div class="caption">RESPONSIVE</div>
-                </li>
-                <li>
-                    <a class="ns-img" href="img/2.jpg"></a>
-                    <div class="caption">TOUCH·ENABLED</div>
-                </li>
-                <li>
-                    <a class="ns-img" href="img/3.jpg"></a>
-                    <div class="caption">VIDEO·AUDIO</div>
-                </li>
-                <li>
-                    <a class="ns-img" href="img/4.jpg"></a>
-                    <div class="caption">NON·JQUERY</div>
-                </li>
-                <li>
-                    <a class="ns-img" href="img/5.jpg"></a>
-                    <div class="caption">MOBILE·FRIENDLY</div>
-                </li> -->
-            </ul>
-            <div class="navsWrapper">
-                <div id="ninja-slider-prev"></div>
-                <div id="ninja-slider-next"></div>
-            </div>
-        </div>
-    </div>
-  </div>
+  <div class="space" style="margin: 91px"></div>
 
-  <div id="selfIntroduction" class="section" style="margin-bottom: -182px">
-    <div style="margin-top: 0px;margin-bottom: 0px "class="ui one column centered grid container">
-    <a href="http://alvis2015.github.io/"onclick="window.open(this.href, '', 'width=650,height=950,left=600,top=5'); return false;" >
-    <img src="http://i.imgur.com/g9m44dn.png" style="margin-top: 248px"></a>
-    </div>
-  </div>
-
-  <!-- show modal -->
+  <!-- 這裡放 自我介紹 -->
+  
+              <!-- show modal -->
             <div id="005" class="ui modal">
               <i class="close icon"></i>
               <div class="header">
@@ -198,31 +159,19 @@
           </div>
         </div>
       </div>
+      <!-- show myskill-->
+      
+      <!-- show software-->
+      
+
+    <!-- 這裡放 timelinejs -->
+  
 
   <!-- 這裡放 聯絡我 -->
-  <div id="contactMe" class="section">
-    <div style="margin-top: 0px;margin-bottom: 0px "class="ui one column centered grid container">
-      <form class="ui large form segment aniview reallyslow" av-animation="lightSpeedIn" style="width: 352px;margin-top: 66px">
-        <div class="field">
-          <label>給我你的名字</label>
-          <input name="yourname" type="text" placeholder="請輸入名字">
-        </div>
-        <div class="field">
-          <label>還有你的聯絡方式</label>
-          <input name="youremail" type="text" placeholder="請輸入E-mail">
-        </div>
-        <div class="field">
-          <label>你的寶貴意見</label>
-          <textarea name="tellmewhat" type="text" placeholder="說，什麼都可以說!"></textarea>
-        </div>
-        <div id="contactBtn" class="ui olive submit button">提交</div>
-        <div class="ui error message"></div>
-      </form>
-    </div>
-  </div>
+  
 
-  <!-- 我是footer範例 -->
-    <div class="ui brown inverted vertical footer segment" style="margin-top: -182px">
+  <!-- 這裡放 footer -->
+      <div class="ui brown inverted vertical footer segment" style="margin-top: -182px">
       <div class="ui center aligned container">
         <div class="ui stackable inverted divided grid">
           <div class="three wide column">
@@ -258,5 +207,6 @@
       </div>
     </div>
  </div>
+    
 </body>
 </html>    
