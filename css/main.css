@@ -1,6 +1,6 @@
-.section{
+/*.section{
     padding: 5px 0;
-}
+}*/
 
 .space {
     height: 70px;
@@ -9,15 +9,15 @@
 
 #selfIntroduction {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,fefefe+100 */
-    background-image: url("http://www.psdgraphics.com/file/abstract-mosaic-background.png"); /* Old browsers */
+    background-image: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/background-wallpapers-32.jpg"); /* Old browsers */
     background-position: center;
-    background-repeat:repeat;
-    min-height: 100vh;
+    background-repeat: no-repeat;
+    min-height: 124vh;
     
 }
 
 #photoSlide {
-    min-height: 100vh;
+    min-height: 48vh;
     background-color: black;
 }
 
@@ -27,7 +27,7 @@
 }
 
 #contactMe {
-    min-height: 100vh;
+    min-height: 150vh;
     background-color: #FFF8DC;
     background-image:url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/background-wallpapers-32.jpg");
     background-position: center;
@@ -54,12 +54,3 @@
     z-index:20;
     cursor: pointer;
 }
-#QR{
-    width: 150px;
-}
-#TW{
-    width: 150px;
-}
-
-
-
